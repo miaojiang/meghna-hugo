@@ -32,24 +32,10 @@
 
 			{{"<!-- Contact Form -->" | safeHTML}}
 			<div class="col-lg-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-				<form id="contact-form" class="form-meghna" method="post" action="{{ .form_action | safeURL }}" role="form">
-					<input name="e-mail" type="text" id="e-mail" autocomplete="off">
-					<div class="form-group">
-						<input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
-					</div>
-					<div class="form-group">
-						<input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
-					</div>
-					<div class="form-group">
-						<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
-					</div>
-					<div class="form-group">
-						<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
-					</div>
-					<div id="cf-submit">
-						<button type="submit" id="contact-submit" class="btn btn-transparent btn-block" value="Submit">{{ i18n "submit" }}</button>
-					</div>
-				</form>
+				<h3>微信二维码</h3>
+				<div class="icon-box">
+					<img class="img-fluid" src="{{ .wechat | absURL }}" width="200" height="200" alt="image">
+				</div>
 			</div>
 		</div>
 	</div>
